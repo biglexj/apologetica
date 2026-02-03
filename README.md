@@ -1,94 +1,106 @@
-# Libro (Vault de Obsidian)
+# Curso de Apologética Católica
 
 ## Descripción
 
-Este repositorio contiene un vault de Obsidian pensado como borrador/compilación de un libro sobre apologética y defensa de la fe católica. Aquí se almacenan notas, capítulos y materiales de referencia en formato Markdown.
+Este repositorio contiene un curso completo de apologética católica, organizado como un vault de Obsidian. El material está diseñado para ayudar a los católicos a comprender, profundizar y defender su fe de manera razonada y amorosa.
 
-Contenido principal:
+## Contenido
 
-- Apologética.md — notas y capítulos sobre apologética.
-- GEMINI.md — (archivo de referencia / nota temática).
+El curso está organizado en capítulos progresivos que cubren los temas fundamentales de la apologética católica:
 
-## Objetivo
+### Capítulos
 
-Mantener un repositorio organizado con las notas del libro para:
+| Archivo                                                                    | Título                   | Descripción                                                                      |
+| -------------------------------------------------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
+| [00-Introduccion.md](capitulos/00-Introduccion.md)                         | Introducción             | Propósito del curso, estructura, actitudes del apologeta y cómo usar el material |
+| [01-Que-es-la-Apologetica.md](capitulos/01-Que-es-la-Apologetica.md)       | ¿Qué es la Apologética?  | Significado, fundamento bíblico, historia y espíritu de la apologética católica  |
+| [02-La-Sagrada-Escritura.md](capitulos/02-La-Sagrada-Escritura.md)         | La Sagrada Escritura     | Inspiración, canon, libros deuterocanónicos e interpretación correcta            |
+| [03-Cristo-Fundo-una-Iglesia.md](capitulos/03-Cristo-Fundo-una-Iglesia.md) | Cristo Fundó una Iglesia | Las promesas a Pedro, las llaves del Reino y la sucesión apostólica              |
+| [04-La-Divina-Trinidad.md](capitulos/04-La-Divina-Trinidad.md)             | La Divina Trinidad       | Fundamentos bíblicos, divinidad de cada Persona y respuestas a objeciones        |
+| [05-La-Eucaristia.md](capitulos/05-La-Eucaristia.md)                       | La Eucaristía            | Presencia real, Juan 6, testimonio patrístico y sacrificio eucarístico           |
 
-- Facilitar edición, versión y colaboración mediante Git.
-- Mantener copias de seguridad y un historial de cambios.
-- Generar versiones (exportar) cuando se desee compilar el libro.
+### Archivo original
 
-## Estructura recomendada
+- `Apologética.md` — Documento original con todo el contenido consolidado.
 
-- `Apologética.md` — capítulo(s) o sección principal(es) sobre apologética.
-- `assets/` — (opcional) imágenes, gráficos y recursos.
-- `drafts/` — (opcional) borradores que no formen parte del manuscrito principal.
+## Estructura del repositorio
 
-Actual: los archivos en este repo al momento son los listados arriba.
+```
+apologetica/
+├── README.md                 # Este archivo
+├── Apologética.md           # Documento original consolidado
+├── capitulos/               # Capítulos individuales expandidos
+│   ├── 00-Introduccion.md
+│   ├── 01-Que-es-la-Apologetica.md
+│   ├── 02-La-Sagrada-Escritura.md
+│   ├── 03-Cristo-Fundo-una-Iglesia.md
+│   ├── 04-La-Divina-Trinidad.md
+│   └── 05-La-Eucaristia.md
+└── assets/                  # (opcional) imágenes y recursos
+```
 
-## Cómo usar
+## Características del material
 
-1. Abrir esta carpeta como Vault en Obsidian: Archivo → Abrir carpeta como vault (selecciona la carpeta del repositorio).
-2. Editar las notas en Obsidian o en cualquier editor de texto (Markdown).
-3. Hacer commits frecuentes para preservar el historial:
+Cada capítulo incluye:
 
-	- Recomendación mínima de flujo con Git:
+- **Fundamentos bíblicos**: Pasajes clave con explicación detallada
+- **Enseñanza de la Iglesia**: Referencias al Catecismo y documentos magisteriales
+- **Contexto histórico**: Desarrollo de las doctrinas a través de los siglos
+- **Testimonio patrístico**: Citas de los Padres de la Iglesia
+- **Respuestas a objeciones**: Refutación de argumentos comunes contra la fe
+- **Aplicación práctica**: Cómo vivir y comunicar estas verdades
+- **Preguntas de reflexión**: Para profundizar personalmente
+- **Lecturas recomendadas**: Para continuar el estudio
+
+## Cómo usar este material
+
+### En Obsidian
+
+1. Abre esta carpeta como Vault en Obsidian: `Archivo → Abrir carpeta como vault`
+2. Navega por los capítulos usando el explorador de archivos o los enlaces internos
+3. Usa la vista de gráfico para ver las conexiones entre temas
+
+### Orden de estudio recomendado
+
+1. Comienza con la **Introducción** para entender el propósito y el espíritu del curso
+2. Sigue los capítulos en orden numérico
+3. Toma notas y responde las preguntas de reflexión
+4. Memoriza los pasajes bíblicos clave
+5. Practica explicando los temas a otros
+
+### Para grupos de estudio
+
+- Cada capítulo puede cubrir una o dos sesiones de estudio
+- Use las preguntas de reflexión para la discusión grupal
+- Asigne las lecturas recomendadas como tarea
+
+## Control de versiones
+
+Para preservar el historial de cambios:
 
 ```powershell
 git add .
-git commit -m "Actualiza Apologética: sección X"
+git commit -m "Actualiza capítulo X: descripción del cambio"
 git push origin main
 ```
 
-4. Hacer copias de seguridad periódicas (por ejemplo, usando GitHub, un disco externo o servicios en la nube).
+## Exportación
 
-## Recomendaciones de Obsidian
+Para generar PDF o EPUB, puedes usar:
 
-- Plugins sugeridos: "YAML Frontmatter", "Markdown Table Formatter", "Pandoc Plugin" (si quieres exportar a DOCX/PDF) y "Templater".
-- Usa Frontmatter en la parte superior de cada nota para metadatos (título, fecha, estado):
-
-```yaml
----
-title: "Título de la nota"
-date: 2025-10-26
-status: draft
----
-```
-
-## Convenciones de escritura
-
-- Mantén títulos y subtítulos consistentes (usar #, ##, ###).
-- Usa enlaces internos de Obsidian [[Nombre de nota]] para referencias cruzadas.
-- Mantén imágenes en `assets/` y referencia mediante rutas relativas.
-
-## Contribuir
-
-1. Haz un fork o crea una rama nueva para tus cambios:
-
-```powershell
-git checkout -b feature/nueva-seccion
-```
-
-2. Haz commits pequeños y descriptivos.
-3. Abre un pull request para revisión.
-
-Si colaboras directamente con el autor, comenta o crea issues para discutir grandes cambios.
+- El plugin de Pandoc en Obsidian
+- Exportación directa desde Obsidian (requiere Obsidian Publish o plugin)
 
 ## Licencia
 
-Añadir una licencia si corresponde. Por defecto, este repositorio no incluye una licencia explícita. Si quieres una recomendación, se puede añadir MIT o CC-BY para contenidos textuales.
+Este material es para uso educativo y evangelizador. Se permite su reproducción citando la fuente.
 
 ## Contacto
 
-Autor / repositorio: `biglexj` (GitHub).
-
-## Notas finales
-
-Este README es una plantilla inicial pensada para ser ampliada. Si quieres, puedo:
-
-- Añadir una plantilla de capítulo en `drafts/`.
-- Crear un archivo `CONTRIBUTING.md` con normas más detalladas.
-- Añadir un script de exportación con Pandoc para generar PDF/EPUB.
+Autor / repositorio: `biglexj` (GitHub)
 
 ---
 
-Fecha de última actualización: 2025-10-26
+*"Estad siempre dispuestos a dar respuesta a todo el que os pida razón de vuestra esperanza."* — 1 Pedro 3:15
+
+Última actualización: 2026-02-03
